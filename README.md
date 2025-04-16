@@ -1,7 +1,8 @@
 # 📞 Seattle 911 Call Data Pipeline (Batch + Stream)
 
-**[➡️ Jump to Batch Processing](#️-batch-processing)**  
-**[➡️ Jump to Stream Processing](#️-stream-processing)**
+## 🔍 Quick Navigation
+**Batch Processing** · [View Section](#batch-processing)  
+**Stream Processing** · [View Section](#stream-processing)
 
 ---
 
