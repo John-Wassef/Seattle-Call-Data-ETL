@@ -132,6 +132,14 @@ SELECT call_type, COUNT(*)
 FROM seattle_data.police_calls
 GROUP BY call_type;
 ```
+## 📊 Power BI Dashboards
+
+### Overview Dashboard
+<img src="Images/power_bi_overview.png" alt="Power BI Overview Dashboard" width="1000" style="max-width:100%;">
+
+### Key Metrics Dashboard
+<img src="Images/power_bi_meausres.png" alt="Power BI Measures Dashboard" width="1000" style="max-width:100%;">
+
 
 ---
 
