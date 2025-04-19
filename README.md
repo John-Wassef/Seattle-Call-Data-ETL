@@ -48,7 +48,7 @@ ETL_Pipeline/
 ### 🚀 Quick Start
 
 ```bash
-python Batch/main.py --sample
+python ETL_Pipeline_Batch/main.py
 ```
 
 ### ⚙️ Pipeline Stages
