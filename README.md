@@ -1,14 +1,13 @@
 # 📞 Seattle 911 Call Data Pipeline (Batch + Stream)
 
-
 ## 🌟 Features
 
-| Batch                              | Stream                           |
-|------------------------------------|----------------------------------|
-| ✅ CSV to Parquet/Snowflake        | ✅ Real-time API ingestion       |
-| ✅ Star schema generation          | ✅ Kafka stream processing       |
-| ✅ Historical data transformation  | ✅ Cassandra storage             |
-| ✅ Data quality checks             | ✅ Micro-batch transformations   |
+| Batch                             | Stream                         |
+| --------------------------------- | ------------------------------ |
+| ✅ CSV to Parquet/Snowflake       | ✅ Real-time API ingestion     |
+| ✅ Star schema generation         | ✅ Kafka stream processing     |
+| ✅ Historical data transformation | ✅ Cassandra storage           |
+| ✅ Data quality checks            | ✅ Micro-batch transformations |
 
 ---
 
@@ -54,11 +53,11 @@ python Batch/main.py --sample
 
 ### ⚙️ Pipeline Stages
 
-| Stage     | Description                   |
-|-----------|-------------------------------|
-| Extract   | Reads CSV from `Data/`        |
-| Transform | Creates star schema           |
-| Load      | Writes to Parquet/Snowflake   |
+| Stage     | Description                 |
+| --------- | --------------------------- |
+| Extract   | Reads CSV from `Data/`      |
+| Transform | Creates star schema         |
+| Load      | Writes to Parquet/Snowflake |
 
 ---
 
@@ -105,11 +104,11 @@ python Stream/consumer.py
 
 ### ⚙️ Components
 
-| Component | Description                  |
-|-----------|------------------------------|
-| Producer  | Fetches API → Kafka topic    |
-| Consumer  | Spark Streaming → Cassandra  |
-| Cassandra | Stores in `police_calls`     |
+| Component | Description                 |
+| --------- | --------------------------- |
+| Producer  | Fetches API → Kafka topic   |
+| Consumer  | Spark Streaming → Cassandra |
+| Cassandra | Stores in `police_calls`    |
 
 ---
 
@@ -129,8 +128,8 @@ CREATE TABLE police_calls (
 ### 🔍 Sample Query
 
 ```sql
-SELECT call_type, COUNT(*) 
-FROM seattle_data.police_calls 
+SELECT call_type, COUNT(*)
+FROM seattle_data.police_calls
 GROUP BY call_type;
 ```
 
