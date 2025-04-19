@@ -13,7 +13,7 @@
 
 ## 🏗️ System Architecture
 
-![Pipeline Architecture](Images/System-Architecture.png)
+![Pipeline Architecture](Images/System_Architecture.png)
 
 ---
 
